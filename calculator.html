@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <script>
+        function sqrt() {
+           var z= document.getElementById("result").value 
+            
+            
+            document.getElementById("result").value = Math.sqrt(z)
+        }
+        function backspace() {
+            var value = document.getElementById("result").value
+            document.getElementById("result").value = value.substring(0, value.length - 1)
+        }
+
+
+        function dis(val) {
+            document.getElementById("result").value += val
+        }
+        function solve() {
+            var x = document.getElementById("result").value
+            var y = eval(x)
+            document.getElementById("result").value = y
+        }
+        function clr() {
+            document.getElementById("result").value = " "
+        }
+    </script>
+    <style>
+        input[type="text"] {
+
+            border: black 19px;
+            background-color: green;
+            width: 100%
+        }
+
+        input[type="button"] {
+            border-radius: 1000px;
+            color: white;
+            border: rgb(231, 11, 147) 19px;
+            background-color: black;
+            width: 100%
+        }
+
+        body {
+            background-color: chartreuse;
+            border: 30px green;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body background="C:\Users\lenovo\Pictures\Screenshot_2020-12-16-19-26-20-80.png" width="50%" height="50%">
+   
+        <marquee>
+            <h4 style=" background-color: rgb(231, 11, 147); color: lawngreen;text-decoration-style: wavy;text-shadow: 4px 2px white; ">❤💚JAY GURU DEV💛💖</h4>
+        </marquee>
+    
+    <table border="8" align="center" style="background-color:yellow;border-color:red; border-radius: 10px;">
+        <tr>
+            <td colspan="4"><input type="text" id="result" placeholder="SIDDHARTHLAKSHMI" /></td>
+
+        <tr>
+
+            <td><input type="button" value="back" style="background-color:mediumseagreen;" onclick="backspace()" /></td>
+
+            <td><input type="button" value="sqrt" onclick="sqrt()" /></td>
+            <td><input type="button" value="🙏" onclick=" dis('🙏')" /></td>
+            <td> <input type="button" value="clear" style="background-color:#0001FF;" onclick="clr()" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="dis('1')" /></td>
+            <td><input type="button" value="2" onclick="dis('2')" /></td>
+            <td><input type="button" value="3" onclick="dis('3')" /></td>
+            <td><input type="button" value="+" style="background-color:red;" onclick="dis('+')" /></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')" /></td>
+            <td><input type="button" value="5" onclick="dis('5')" /></td>
+            <td><input type="button" value="6" onclick="dis('6')" /></td>
+            <td><input type="button" value="-" style="background-color:#FF00FF;" onclick="dis('-')" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')" /></td>
+            <td><input type="button" value="8" onclick="dis('8')" /></td>
+            <td><input type="button" value="9" onclick="dis('9')" /></td>
+            <td><input type="button" value="*" style="background-color:aqua;" onclick="dis('*')" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="dis('0')" /></td>
+            <td><input type="button" value="." onclick="dis('.')" /></td>
+            <td><input type="button" value="=" onclick="solve()" /></td>
+            <td><input type="button" value="/" style="background-color:lime;" onclick="dis('/')" /></td>
+        </tr>
+    </table>
+</body>
+
+</html>
